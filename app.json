@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "Digital Cassette",
+    "slug": "digital-cassette",
+    "scheme": "digitalcassette",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#f3dfcb"
+      }
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}

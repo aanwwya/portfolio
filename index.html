@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ananya Narayanan | Med-Tech Portfolio</title>
+    <meta
+      name="description"
+      content="A portfolio for Ananya Narayanan, a physiotherapy student learning software development."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="loader" data-loader>
+      <div class="loader-orbit">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <p>Loading portfolio</p>
+    </div>
+
+    <div class="cursor-glow" data-cursor-glow></div>
+    <canvas class="particle-canvas" data-particles></canvas>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div class="grid-overlay"></div>
+
+    <main class="app-shell">
+      <section class="home-section" id="home" aria-label="Portfolio navigation">
+        <div class="home-copy reveal">
+          <p class="eyebrow">Ananya Narayanan</p>
+          <h1>Projects, Code & Experiments</h1>
+        </div>
+
+        <nav class="icon-grid reveal" aria-label="Main sections">
+          <button class="desktop-icon" type="button" data-target="intro">
+            <span class="icon-tile">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="4" y="5" width="16" height="11" rx="2"></rect>
+                <path d="M9 20h6M12 16v4"></path>
+              </svg>
+            </span>
+            <span>Intro</span>
+          </button>
+          <button class="desktop-icon" type="button" data-target="about">
+            <span class="icon-tile">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="8" r="4"></circle>
+                <path d="M4 21c1.8-4.1 5-6 8-6s6.2 1.9 8 6"></path>
+              </svg>
+            </span>
+            <span>About</span>
+          </button>
+          <button class="desktop-icon" type="button" data-target="projects">
+            <span class="icon-tile">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 7.5A2.5 2.5 0 0 1 5.5 5H10l2 2h6.5A2.5 2.5 0 0 1 21 9.5v7A2.5 2.5 0 0 1 18.5 19h-13A2.5 2.5 0 0 1 3 16.5z"></path>
+              </svg>
+            </span>
+            <span>Projects</span>
+          </button>
+          <button class="desktop-icon" type="button" data-target="skills">
+            <span class="icon-tile">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m4 20 4.6-1.3L19 8.3 15.7 5 5.3 15.4z"></path>
+                <path d="m14.5 6.2 3.3 3.3"></path>
+              </svg>
+            </span>
+            <span>Skills</span>
+          </button>
+          <button class="desktop-icon" type="button" data-target="contact">
+            <span class="icon-tile">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                <path d="m4 7 8 6 8-6"></path>
+              </svg>
+            </span>
+            <span>Contact</span>
+          </button>
+        </nav>
+
+      </section>
+
+      <section class="window-section reveal" id="intro">
+        <div class="window-panel hero-window">
+          <div class="title-bar">
+            <strong>This PC - Intro</strong>
+            <div class="window-actions">
+              <button type="button" data-window-action="minimize" aria-label="Minimize window"></button>
+              <button type="button" data-window-action="fullscreen" aria-label="Toggle fullscreen"></button>
+              <button type="button" data-window-action="close" aria-label="Close window"></button>
+            </div>
+          </div>
+          <div class="window-content hero-content">
+            <div>
+              <span class="pill-label">Student Portfolio</span>
+              <h2>A medical student learning to code</h2>
+              <p>
+                I'm Ananya, a physiotherapy student building websites & web
+                applications, exploring software, machine learning and AI.
+              </p>
+              <p>
+                At the moment, my goal is simple: to keep learning, build
+                meaningful projects, and explore different fields to develop a
+                strong and a versatile skillset.
+              </p>
+              <div class="hero-actions">
+                <button class="primary-action" type="button" data-target="projects">
+                  Open Projects
+                </button>
+                <button class="secondary-action" type="button" data-target="contact">
+                  Get in touch
+                </button>
+              </div>
+            </div>
+            <div class="bio-orb" aria-hidden="true">
+              <div class="neural-card">
+                <svg viewBox="0 0 260 180">
+                  <path class="ecg" d="M10 98h38l13-32 25 75 20-43h42l14-24 20 50 18-26h50"></path>
+                  <g class="nodes">
+                    <circle cx="54" cy="54" r="6"></circle>
+                    <circle cx="112" cy="82" r="6"></circle>
+                    <circle cx="178" cy="48" r="6"></circle>
+                    <circle cx="202" cy="126" r="6"></circle>
+                    <line x1="54" y1="54" x2="112" y2="82"></line>
+                    <line x1="112" y1="82" x2="178" y2="48"></line>
+                    <line x1="178" y1="48" x2="202" y2="126"></line>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="window-section reveal" id="about">
+        <div class="window-panel">
+          <div class="title-bar">
+            <strong>File Explorer - About</strong>
+            <div class="window-actions">
+              <button type="button" data-window-action="minimize" aria-label="Minimize window"></button>
+              <button type="button" data-window-action="fullscreen" aria-label="Toggle fullscreen"></button>
+              <button type="button" data-window-action="close" aria-label="Close window"></button>
+            </div>
+          </div>
+          <div class="window-content about-grid about-grid-simple">
+            <div class="about-copy">
+              <h3>Curious about healthcare, passionate about tech</h3>
+              <p>
+                I'm Ananya, a physiotherapy student building websites & web
+                applications while exploring software, AI, and machine learning.
+              </p>
+              <p>
+                I enjoy learning by building and experimenting with different
+                technologies, starting with small web projects using both
+                frontend and backend tools.
+              </p>
+              <p>
+                I'm currently exploring data science, machine learning, and data
+                structures & algorithms, focusing on problem-solving,
+                programming fundamentals, and building practical projects.
+              </p>
+            </div>
+            <div class="timeline">
+              <article>
+                <h4>Experience</h4><p>None yet</p>
+              </article>
+              <article>
+                <h4>Timezone</h4><p>UTC +5:30</p>
+              </article>
+              <article>
+                <h4>Location</h4><p>Bangalore, open to remote</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="window-section reveal" id="projects">
+        <div class="window-panel">
+          <div class="title-bar">
+            <strong>Projects - Lab</strong>
+            <div class="window-actions">
+              <button type="button" data-window-action="minimize" aria-label="Minimize window"></button>
+              <button type="button" data-window-action="fullscreen" aria-label="Toggle fullscreen"></button>
+              <button type="button" data-window-action="close" aria-label="Close window"></button>
+            </div>
+          </div>
+          <div class="window-content">
+            <div class="section-heading">
+              <h2>Project Showcase</h2>
+              <p>Small builds, web experiments, and healthcare-inspired ideas.</p>
+            </div>
+            <div class="filter-row" aria-label="Project filters">
+              <button class="filter active" type="button" data-filter="all">All</button>
+              <button class="filter" type="button" data-filter="ai">AI</button>
+              <button class="filter" type="button" data-filter="healthcare">Healthcare</button>
+              <button class="filter" type="button" data-filter="web">Web</button>
+              <button class="filter" type="button" data-filter="python">Python</button>
+            </div>
+            <div class="project-grid">
+              <article class="project-card" data-category="ai healthcare python">
+                <div class="project-thumb posture"></div>
+                <h3>Posture Detection</h3>
+                <p>Computer vision tool for detecting posture alignment and simple movement cues.</p>
+                <div class="stack"><span>OpenCV</span><span>MediaPipe</span><span>Python</span></div>
+                <div class="card-actions"><a href="#">Live Preview</a><a href="#">GitHub</a></div>
+              </article>
+              <article class="project-card" data-category="ai healthcare python">
+                <div class="project-thumb gait"></div>
+                <h3>Gait Analysis Lab</h3>
+                <p>Prototype dashboard for visualizing walking patterns and rehab progress.</p>
+                <div class="stack"><span>Python</span><span>ML</span><span>Biomechanics</span></div>
+                <div class="card-actions"><a href="#">Live Preview</a><a href="#">GitHub</a></div>
+              </article>
+              <article class="project-card" data-category="healthcare web">
+                <div class="project-thumb neuro"></div>
+                <h3>Neuroplasticity App</h3>
+                <p>Micro-learning experience for rehab concepts, brain adaptation, and recovery habits.</p>
+                <div class="stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                <div class="card-actions"><a href="#">Live Preview</a><a href="#">GitHub</a></div>
+              </article>
+              <article class="project-card" data-category="ai healthcare web">
+                <div class="project-thumb therapy"></div>
+                <h3>AI Therapy Assistant</h3>
+                <p>Concept assistant for exercise reminders, symptom notes, and patient-friendly summaries.</p>
+                <div class="stack"><span>AI</span><span>UI/UX</span><span>Healthcare</span></div>
+                <div class="card-actions"><a href="#">Live Preview</a><a href="#">GitHub</a></div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="window-section reveal" id="skills">
+        <div class="window-panel">
+          <div class="title-bar">
+            <strong>Skills - Toolbox</strong>
+            <div class="window-actions">
+              <button type="button" data-window-action="minimize" aria-label="Minimize window"></button>
+              <button type="button" data-window-action="fullscreen" aria-label="Toggle fullscreen"></button>
+              <button type="button" data-window-action="close" aria-label="Close window"></button>
+            </div>
+          </div>
+          <div class="window-content skills-layout">
+            <div class="section-heading">
+              <h2>Skills</h2>
+            </div>
+            <div class="skill-columns">
+              <div class="skill-box">
+                <h3>Languages</h3>
+                <div class="skill-tags">
+                  <span>Python</span><span>HTML</span><span>CSS</span>
+                  <span>JavaScript</span><span>TypeScript</span><span>C</span>
+                  <span>R</span><span>SQL</span>
+                </div>
+              </div>
+              <div class="skill-box">
+                <h3>Frameworks & Libraries</h3>
+                <div class="skill-tags">
+                  <span>Flask</span><span>Django</span><span>React.js</span>
+                  <span>pandas</span><span>numpy</span><span>matplotlib</span>
+                  <span>Streamlit</span><span>OpenCV</span><span>MediaPipe</span>
+                </div>
+              </div>
+              <div class="skill-box">
+                <h3>Developer Tools</h3>
+                <div class="skill-tags">
+                  <span>Git</span><span>GitHub</span><span>Visual Studio Code</span>
+                  <span>Docker</span><span>Jupyter Notebook</span>
+                </div>
+              </div>
+              <div class="skill-box">
+                <h3>Design + Medicine</h3>
+                <div class="skill-tags">
+                  <span>UI/UX Design</span><span>Biomechanics</span>
+                  <span>Healthcare Innovation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="window-section reveal" id="contact">
+        <div class="window-panel">
+          <div class="title-bar">
+            <strong>Get in touch with me</strong>
+            <div class="window-actions">
+              <button type="button" data-window-action="minimize" aria-label="Minimize window"></button>
+              <button type="button" data-window-action="fullscreen" aria-label="Toggle fullscreen"></button>
+              <button type="button" data-window-action="close" aria-label="Close window"></button>
+            </div>
+          </div>
+          <div class="window-content contact-grid contact-simple">
+            <div>
+              <h2>Let's build something meaningful.</h2>
+              <p>
+                Feel free to reach out for collaborations, project ideas, 
+                to ask questions, offer advice, or just a friendly hello!
+              </p>
+              <div class="contact-links">
+                <a href="mailto:ananya162005@gmail.com">ananya162005@gmail.com</a>
+                <a href="https://github.com/aanwwya" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/ananya-narayanan-47aa34323/" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a href="#" class="resume-link">Resume</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="dock" aria-label="Section dock">
+      <button class="dock-button active" type="button" data-target="intro" aria-label="Intro">
+        <svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="11" rx="2"></rect><path d="M9 20h6M12 16v4"></path></svg>
+      </button>
+      <button class="dock-button" type="button" data-target="about" aria-label="About">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1.8-4.1 5-6 8-6s6.2 1.9 8 6"></path></svg>
+      </button>
+      <button class="dock-button" type="button" data-target="projects" aria-label="Projects">
+        <svg viewBox="0 0 24 24"><path d="M3 7.5A2.5 2.5 0 0 1 5.5 5H10l2 2h6.5A2.5 2.5 0 0 1 21 9.5v7A2.5 2.5 0 0 1 18.5 19h-13A2.5 2.5 0 0 1 3 16.5z"></path></svg>
+      </button>
+      <button class="dock-button" type="button" data-target="skills" aria-label="Skills">
+        <svg viewBox="0 0 24 24"><path d="m4 20 4.6-1.3L19 8.3 15.7 5 5.3 15.4z"></path><path d="m14.5 6.2 3.3 3.3"></path></svg>
+      </button>
+      <button class="dock-button" type="button" data-target="contact" aria-label="Contact">
+        <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m4 7 8 6 8-6"></path></svg>
+      </button>
+    </div>
+
+    <script src="script.js?v=4"></script>
+  </body>
+</html>
