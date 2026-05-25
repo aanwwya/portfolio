@@ -9,6 +9,16 @@ const filters = document.querySelectorAll(".filter");
 const projectCards = document.querySelectorAll(".project-card");
 const counters = document.querySelectorAll("[data-count]");
 
+projectCards.forEach((card) => {
+  const url = card.dataset.url;
+  if (!url) return;
+
+  card.addEventListener("click", (event) => {
+    if (event.target.closest("a")) return;
+    window.open(url, "_blank", "noopener,noreferrer");
+  });
+});
+
 window.addEventListener("load", () => {
   setTimeout(() => loader.classList.add("hidden"), 650);
 });
